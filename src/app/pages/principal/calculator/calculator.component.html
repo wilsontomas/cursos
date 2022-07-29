@@ -1,3 +1,89 @@
 <div class="calc-container">
+   
+
+	<div class="login-content">
+        <br/>
+		<mat-toolbar class="login-toolbar" color="primary">Calculadora</mat-toolbar>
+        <br/>
+		<mat-card>
+            <mat-card-title>Costo del Docente y Horas Totales</mat-card-title>
+			
+				<mat-form-field>
+					<mat-icon matPrefix>equalizer</mat-icon>
+					<input autofocus type="number" [(ngModel)]="ventas" matInput placeholder="Ventas Estimadas" />
+					
+				</mat-form-field>
+                <mat-form-field>
+					<mat-icon matPrefix>attach_money</mat-icon>
+					<input autofocus type="number" [(ngModel)]="costoHora" matInput placeholder="Costo por Hora" />
+					
+				</mat-form-field>
+                <mat-form-field>
+					<mat-icon matPrefix>av_timer</mat-icon>
+					<input autofocus type="number" [(ngModel)]="cantidadHora" matInput placeholder="Cantidad de Horas" />
+					
+				</mat-form-field>
+
+                <mat-form-field>
+					<mat-icon matPrefix>monetization_on</mat-icon>
+					<input autofocus type="number" [(ngModel)]="totalHora" disabled="true" matInput placeholder="Total por horas" />
+					
+				</mat-form-field>
+
+			
+            <br/>
+           
+		</mat-card>
+         <br/>
+        <mat-card>
+            <mat-card-title>Gastos variados</mat-card-title>
+           
+            <mat-form-field>
+                 <mat-icon matPrefix>poll</mat-icon>
+                <input autofocus type="number" [(ngModel)]="actividad"  matInput placeholder="Gastos de actividad" />
+                
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-icon matPrefix>domain</mat-icon>
+                <input autofocus type="number" [(ngModel)]="web"  matInput placeholder="Gastos Web" />
+                
+            </mat-form-field>
+            <mat-form-field>
+                 <mat-icon matPrefix>edit</mat-icon>
+                <input autofocus type="number" [(ngModel)]="herramientas"  matInput placeholder="Herramientas" />
+                
+            </mat-form-field>
+            <mat-form-field>
+               
+                <mat-icon matPrefix>chrome_reader_mode</mat-icon>
+                <input autofocus type="number" [(ngModel)]="publicidad"  matInput placeholder="Publividad" />
+                
+            </mat-form-field>
+            
+        </mat-card>
+       
+        <br/>
+        <mat-card>
+            <mat-form-field>
+               
+                <mat-icon matPrefix>monetization_on</mat-icon>
+                <input autofocus type="number" [(ngModel)]="total" disabled="true" matInput placeholder="Costo Total" />
+                
+            </mat-form-field>
+            <mat-form-field>
+               
+                <mat-icon matPrefix>monetization_on</mat-icon>
+                <input autofocus type="number" [(ngModel)]="totalUnidad" disabled="true" matInput placeholder="Valor por Unidad" />
+                
+            </mat-form-field>
+            <div class="socialMediaFlex">
+                <button style="width:50%" (click)="calcular()"  type="button" mat-raised-button color="primary">Calcular</button>
+          </div>
+        </mat-card>
+       <br/>
+
+	</div>
+   
 
 </div>
