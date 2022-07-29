@@ -29,6 +29,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatBadgeModule } from '@angular/material/badge';
 
+import { LayoutModule } from '@angular/cdk/layout';
+
 //import { DomSanitizer } from '@angular/platform-browser';
 const materialComponent = [
   MatTableModule,
@@ -61,8 +63,10 @@ const materialComponent = [
 ];
 
 @NgModule({
-  declarations: [],
-  imports: [...materialComponent],
+  declarations: [
+   
+  ],
+  imports: [...materialComponent, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule],
   exports: [...materialComponent],
 })
 export class MaterialModule {}
