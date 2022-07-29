@@ -5,20 +5,31 @@
     width: 100%;
     align-items: center;
     display: flex;
+    background-image: url("src/assets/register.jpg");
+    background-repeat: no-repeat;
   }
   
   form {
     width: 100%;
   }
   
+  .bg-image{
+    background-image: url("src/assets/register.jpg");
+    background-repeat: no-repeat;
+  
+  }
+  
   .login-content {
     width: 400px;
     display: block;
     margin: 0 auto;
+    
   }
   
   .login-toolbar {
     justify-content: center;
+    height: fit-content;
+    padding: 3%;
   }
   
   .mat-form-field {

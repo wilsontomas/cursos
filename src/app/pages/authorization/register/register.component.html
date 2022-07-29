@@ -1,3 +1,4 @@
+
 <div class="login-container">
 	<div class="login-content">
 		<mat-toolbar class="login-toolbar" color="primary">Registro</mat-toolbar>
@@ -17,10 +18,14 @@
 				
 				</mat-form-field>
 
-
-				<mat-form-field>
+                <mat-form-field>
 					<mat-icon matPrefix>lock_outline</mat-icon>
 					<input type="password" autocomplete="false" matInput placeholder="Clave *" />
+        
+				</mat-form-field>
+				<mat-form-field>
+					<mat-icon matPrefix>lock_outline</mat-icon>
+					<input type="password" autocomplete="false" matInput placeholder="Repita la Clave *" />
         
 				</mat-form-field>
 				
@@ -29,6 +34,12 @@
         	<button style="width:50%"   type="submit" mat-raised-button color="primary">Crear Cuenta</button>
       </div>
 			</form>
+            <br/>
+            <span> Ya tienes una cuenta? Inicia sesion aqui <a [routerLink]="['/authorization/login']">INICIAR SESION</a></span>
+
 		</mat-card>
+       
+
 	</div>
 </div>
+
