@@ -1,0 +1,9 @@
+.calc-container {
+   
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-image: url("src/assets/home.jpg");
+    background-repeat: no-repeat;
+  }
