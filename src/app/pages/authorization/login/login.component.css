@@ -5,8 +5,14 @@
     width: 100%;
     align-items: center;
     display: flex;
+    /*background-image: url("src/assets/login.jpg");
+    background-repeat: no-repeat;*/
   }
-  
+  .icon-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
   form {
     width: 100%;
   }
@@ -19,6 +25,7 @@
   
   .login-toolbar {
     justify-content: center;
+    height: fit-content;
   }
   
   .mat-form-field {
