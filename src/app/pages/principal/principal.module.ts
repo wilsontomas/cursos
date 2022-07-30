@@ -6,12 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { MaterialModule } from 'src/app/components/material.module';
 import { FormsModule } from '@angular/forms';
+import { QuestionsComponent } from './questions/questions.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    QuestionsComponent
   ],
   imports: [
     CommonModule,
