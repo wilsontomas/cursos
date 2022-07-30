@@ -15,12 +15,18 @@
 				</mat-form-field>
                 <mat-form-field>
 					<mat-icon matPrefix>attach_money</mat-icon>
-					<input autofocus type="number" [(ngModel)]="costoHora" matInput placeholder="Costo por Hora" />
+					<input autofocus type="number" [(ngModel)]="costoHora" matInput placeholder="Costo por Horas del curso" />
+					
+				</mat-form-field>
+               
+                <mat-form-field>
+					<mat-icon matPrefix>av_timer</mat-icon>
+					<input autofocus type="number" [(ngModel)]="cantidadHora" matInput placeholder="Cantidad de Horas" />
 					
 				</mat-form-field>
                 <mat-form-field>
 					<mat-icon matPrefix>av_timer</mat-icon>
-					<input autofocus type="number" [(ngModel)]="cantidadHora" matInput placeholder="Cantidad de Horas" />
+					<input autofocus type="number" [(ngModel)]="horasPlanificacion" matInput placeholder="Horas de planificacion" />
 					
 				</mat-form-field>
 
@@ -60,23 +66,30 @@
                 <input autofocus type="number" [(ngModel)]="publicidad"  matInput placeholder="Publividad" />
                 
             </mat-form-field>
+            <mat-form-field>
+               
+                <mat-icon matPrefix>graphic_eq</mat-icon>
+                <input autofocus type="number" [(ngModel)]="porcentajeGanancia"  matInput placeholder="% de ganancias" />
+                
+            </mat-form-field>
             
         </mat-card>
        
         <br/>
         <mat-card>
-            <mat-form-field>
-               
-                <mat-icon matPrefix>monetization_on</mat-icon>
-                <input autofocus type="number" [(ngModel)]="total" disabled="true" matInput placeholder="Costo Total" />
-                
-            </mat-form-field>
-            <mat-form-field>
-               
-                <mat-icon matPrefix>monetization_on</mat-icon>
-                <input autofocus type="number" [(ngModel)]="totalUnidad" disabled="true" matInput placeholder="Valor por Unidad" />
-                
-            </mat-form-field>
+           
+               <h2><mat-icon matPrefix>monetization_on</mat-icon> {{total}} $USD</h2>
+               <hr/>
+           
+           
+                <h2><mat-icon matPrefix>monetization_on</mat-icon> {{totalUnidad}} $USD</h2>
+               <hr/>
+          
+
+            
+                <h2><mat-icon matPrefix>monetization_on</mat-icon> {{ganancias}} $USD</h2>
+            <hr/>
+           
             <div class="socialMediaFlex">
                 <button style="width:50%" (click)="calcular()"  type="button" mat-raised-button color="primary">Calcular</button>
           </div>
